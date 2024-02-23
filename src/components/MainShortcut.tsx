@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Shortcut from './Shortcut';
 import { ShortcutItem } from '@/types';
 
-import MenuData from '@/menu.json'
 
 export default function AppMenuShortCut() {
     const [menuItems, setMenuItems] = useState([] as ShortcutItem[])

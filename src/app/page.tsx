@@ -8,7 +8,6 @@ import AppHeader from '@/components/AppHeader';
 import MainShortcut from '@/components/MainShortcut';
 import TopBannerSlide from '@/components/TopBannerSlide';
 import Link from 'next/link';
-import CollectionData from '@/collection.json'
 import ProductListingSection from '@/components/ProductListingSection';
 
 
@@ -24,8 +23,6 @@ export default function Example() {
                 // 4. Setting *dogImage* to the image url that we received from the response above
             .then((allCollections) => {
               const data =   allCollections.items.filter((colllection: any )=> colllection.type == 'SINGLE')
-
-              console.log(data)
               setCollection(data)
 
             })
