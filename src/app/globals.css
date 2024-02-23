@@ -149,6 +149,10 @@ body {
   grid-template-columns: repeat(2, minmax(12em, 1fr));
 }
 
+.swiper {
+  cursor: pointer;
+}
+
 /* image tags */
 
 .tags-on-image
