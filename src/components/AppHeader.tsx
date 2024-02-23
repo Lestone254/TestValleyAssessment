@@ -85,92 +85,88 @@ export default function AppHeader ({ actionBtn }: ButtonLabelProp) {
       </nav>
    
 
-      <nav className="md:hidden flex items-center justify-between py-8 bg-white mobile-menu" aria-label="Global">
-     
-       <Link href="/" className="text-emerald-400 font-semibold  text-2xl">
-           TestValley
-       </Link>
-
-       <div className='flex items-center gap-x-3'> 
-                  <Link href='#'>
-                    <BellIcon 
-                          className="h-6 w-6 text-gray-600"             
-                      />
-                  </Link>
-
-                  <Link href='#'>
-                    <FaSearch 
-                        size="20px"
-                        fontWeight={200}
-                        className="text-gray-600"              
-                      />
-                  </Link>
-
-
-
-          </div>
-
-
-        
-      </nav>
 
     </header>
-     <aside className='md:hidden fixed bottom-0 bg-white py-5 right-0 left-0 flex items-center justify-between mobile-menu z-50'>
-      
-            <div className='flex flex-col items-center'>
+
+      <header className="md:hidden md:px-5 lg:px-32 bg-white">
+    <nav className="md:hidden flex items-center justify-between py-8 bg-white mobile-menu" aria-label="Global">
+     
+     <Link href="/" className="text-emerald-400 font-semibold  text-2xl">
+         TestValley
+     </Link>
+
+     <div className='flex items-center'> 
                 <Link href='#'>
+                  <BellIcon 
+                        className="h-6 w-6 text-gray-600"             
+                    />
+                </Link>
+
+                <Link href='#' className='ml-3'>
+                  <FaSearch 
+                      size="20px"
+                      fontWeight={200}
+                      className="text-gray-600"              
+                    />
+                </Link>
+
+
+
+        </div>
+
+
+      
+    </nav>
+    </header>
+
+     <aside className='md:hidden fixed bottom-0 bg-white py-5 px-4 right-0 left-0 flex items-center justify-between mobile-menu z-50'>
+      
+            <div >
+                <Link href='#' className='flex flex-col items-center'>
                     <HomeIcon 
                        className="h-6 w-6 text-gray-500"                     
                       />
-                  </Link>
                   <span className='text-gray-600 text-sm mobile-title'>
                   홈
                   </span>
+                  </Link>
               </div>
 
-              <div className='flex flex-col items-center'>
-                <Link href='#'>
+                <Link href='#' className='flex flex-col items-center'>
                     <FaSearch 
                         size="20px"
                         fontWeight={200}
                         className="text-gray-500"              
                       />
-                  </Link>
                   <span className='text-gray-600 text-sm mobile-title'>
                   검색
                   </span>
-              </div>
+                  </Link>
 
-              <div className='flex flex-col items-center'>
-                <Link href='#'>
+                <Link href='#' className='flex flex-col items-center'>
                     <Bars3Icon 
                         className="h-6 w-6 text-gray-500"              
                       />
-                  </Link>
                   <span className='text-gray-600 text-sm mobile-title'>
                   카테고리
                   </span>
-              </div>
+                  </Link>
 
-              <div className='flex flex-col items-center'>
-                <Link href='#'>
+                <Link href='#' className='flex flex-col items-center'>
                     <HeartIcon 
                         className="h-6 w-6 text-gray-500 text-sm"  aria-hidden="true"            
                       />
-                  </Link>
                   <span className='text-gray-600 text-sm mobile-title'>
                   좋아요
                   </span>
-              </div>
-
-              <div className='flex flex-col items-center'>
-                <Link href='#'>
-                    <UserIcon className="h-6 w-6 text-gray-500 text-sm" aria-hidden="true" />
                   </Link>
+
+                <Link href='#' className='flex flex-col items-center'>
+                    <UserIcon className="h-6 w-6 text-gray-500 text-sm" aria-hidden="true" />
                   <span className='text-gray-600 text-sm mobile-title'>
                   마이페이지
                   </span>
-              </div>
+                  </Link>
                 
      </aside>
       </>

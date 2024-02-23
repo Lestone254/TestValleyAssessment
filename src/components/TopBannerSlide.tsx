@@ -23,7 +23,7 @@ export default function TopBannerSlide() {
 }, [])
 
   return (
-    <div className='mt-14 md:mt-24'>
+    <div className='-mt-5 md:mt-24'>
       <div className='hidden md:block'>
       <Swiper
         slidesPerView={1}
